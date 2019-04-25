@@ -17,11 +17,11 @@ public class CollabProject {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        File fileReader = new File("c/Users/david/gitHubCollab");
+        File fileReader = new File("c:/Users/david/Desktop/gitHubCollab");
         if (fileReader.isDirectory()) {
             File[] listOfFiles = fileReader.listFiles();
             for (File file : listOfFiles) {
-                if (file.isFile()) {
+                if (file.isDirectory()) {
                     System.out.println(file.getName());
                 }
             }
