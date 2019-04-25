@@ -19,10 +19,14 @@ public class CollabProject {
     public static void main(String[] args) {
         File fileReader = new File("c:/Users/david/Desktop/gitHubCollab");
         if (fileReader.isDirectory()) {
-            File[] listOfFiles = fileReader.listFiles();
-            for (File file : listOfFiles) {
+            File[] listOfFolders = fileReader.listFiles();
+            for (File file : listOfFolders) {
                 if (file.isDirectory()) {
-                    System.out.println(file.getName());
+                    File[] listOfFiles = file.listFiles();
+                    for(File files : listOfFiles){
+                        System.out.println(file.getName());
+                        System.out.println(files.getName());
+                    }
                 }
             }
         }
