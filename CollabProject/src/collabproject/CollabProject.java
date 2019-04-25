@@ -5,6 +5,8 @@
  */
 package collabproject;
 
+import java.io.File;
+
 /**
  *
  * @author david
@@ -15,7 +17,10 @@ public class CollabProject {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        System.out.println("Hi guys");
+        File fileReader = new File("c/Users/david/gitHubCollab");
+        if(fileReader.isDirectory()){
+            fileReader.setReadable(true);
+        }
     }
     
 }
