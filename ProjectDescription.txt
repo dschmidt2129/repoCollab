@@ -1,0 +1,16 @@
+In this project, we will generate a small text file and randomly place it in one of six directories that the user must go and find.
+Or maybe, the program itself can also go look for it.
+
+<<<<<<< HEAD
+
+In order to accomplish this we could create a switch case that randomly picks a directory and "create" the file there
+  After that we can search each directory to find the file based on its name
+  Delete the file after it is found
+=======
+We will write this in Java language. It will be really cool.
+
+We could maybe incorporate a scanner in order to ask the user what option they want to go to and then use that random number generator to have them go to one of those six directories that the user must go and find.
+
+It would be cool if we could like read and write a file and move it around to different directories
+
+>>>>>>> 5b6dfd54505fc09b86c617aa763045d624815059
